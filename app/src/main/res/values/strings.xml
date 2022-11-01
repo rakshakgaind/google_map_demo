@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Google Maps</string>
+    <string name="title_activity_maps">Google Map</string>
+
+    <string name="normal_map">Normal Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="terrain_map">Terrain Map</string>
+    <string name="lat_long_snippet">Lat: %1$.5f, Long: %2$.5f</string>
+    <string name="dropped_pin">Dropped Pin</string>
+    <string name="poi">poi</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="google_map">Google Map</string>
+    <string name="chandigarh_highway">Chandigarh Kharar Highway</string>
+    <string name="sector_118">sector 118</string>
+    <string name="confirm_location">Confirm Location</string>
+    <string name="use_current_location">Use Current Location</string>
+    <string name="locale">Locale</string>
+    <string name="feature">Feature</string>
+    <string name="admin_area">Admin area</string>
+    <string name="sub_admin_area">Sub-Admin Area</string>
+    <string name="locality">Locality</string>
+    <string name="sub_locality">Sub Locality</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="country_code">Country Code</string>
+    <string name="country">Country</string>
+    <string name="latitude">Latitude</string>
+    <string name="unknown">Unknown</string>
+    <string name="api_key">AIzaSyCkA1fpMIggkyLoe8M-GzfCSr2n7QJJYHg</string>
+    <string name="search_here">Search here</string>
+
+
+</resources>

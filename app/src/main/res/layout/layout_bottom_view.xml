@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_8sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_location"
+            style="@style/Theme.GoogleMaps.StyleImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tv_precise_location"
+            app:layout_constraintStart_toStartOf="@id/btn_confirm"
+            app:layout_constraintTop_toTopOf="@id/tv_location"
+            app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_location"
+            style="@style/TextAppearance.Material3.ActionBar.Subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:text="@string/chandigarh_highway"
+            app:layout_constraintEnd_toEndOf="@id/btn_confirm"
+            app:layout_constraintStart_toEndOf="@id/iv_location"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_precise_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:text="@string/sector_118"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:layout_constraintBottom_toTopOf="@id/btn_confirm"
+            app:layout_constraintStart_toStartOf="@id/tv_location"
+            app:layout_constraintTop_toBottomOf="@id/tv_location" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/confirm_location"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_precise_location" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
